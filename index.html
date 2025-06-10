@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple HTML Form</title>
 </head>
 <body>
-    <h1>Head tag</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione praesentium omnis maiores accusamus quam, officia dolorum maxime explicabo labore et dicta architecto, quibusdam provident dolor alias enim assumenda itaque eius!</p>
-    <img src="hp.jpg" alt="alternate name"/>
+    <h2>User Information Form</h2>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
 </body>
 </html>
+
